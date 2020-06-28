@@ -1,6 +1,9 @@
 import 'package:eme/sizeconfig.dart';
 import 'package:eme/widgets/home_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:animations/animations.dart';
+
+import 'stt_page.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -38,7 +41,7 @@ class Home extends StatelessWidget {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Theme.of(context).backgroundColor,
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(45),
                         topRight: Radius.circular(45))),
@@ -46,22 +49,52 @@ class Home extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: HomeContainer(
-                        title: 'Text To Speech',
-                        icon: Icons.text_fields,
+                      child: OpenContainer(
+                        closedElevation: 2.0,
+                        closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                        closedColor: Theme.of(context).backgroundColor,
+                        closedBuilder: (context, action){
+                          return HomeContainer(
+                            title: 'Text To Speech',
+                            icon: Icons.text_fields,
+                          );
+                        },
+                        openBuilder: (context, action){
+                          return SpeechToTextPage();
+                        },
                       ),
                     ),
                     Padding(
                         padding: const EdgeInsets.all(20.0),
-                        child: HomeContainer(
-                          icon: Icons.record_voice_over,
-                          title: 'Speech To Text',
-                        )),
+                        child: OpenContainer(
+                          closedElevation: 2.0,
+                          closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                          closedColor: Theme.of(context).backgroundColor,
+                          closedBuilder: (context, action){
+                            return HomeContainer(
+                              title: 'Speech To Text',
+                              icon: Icons.record_voice_over,
+                            );
+                          },
+                          openBuilder: (context, action){
+                            return SpeechToTextPage();
+                          },
+                        ),),
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: HomeContainer(
-                        title: 'TTS via Bluetooth',
-                        icon: Icons.translate,
+                      child: OpenContainer(
+                        closedElevation: 2.0,
+                        closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
+                        closedColor: Theme.of(context).backgroundColor,
+                        closedBuilder: (context, action){
+                          return HomeContainer(
+                            title: 'TTS via Bluetooth',
+                            icon: Icons.translate,
+                          );
+                        },
+                        openBuilder: (context, action){
+                          return SpeechToTextPage();
+                        },
                       ),
                     ),
                   ],

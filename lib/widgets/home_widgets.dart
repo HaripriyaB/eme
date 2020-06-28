@@ -14,12 +14,7 @@ class HomeContainer extends StatelessWidget {
     SizeConfig().init(context);
     return Container(
       height: SizeConfig.blockSizeHorizontal * 20,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(25.0)),
-          color: Theme.of(context).backgroundColor,
-          boxShadow: [
-            BoxShadow(color: Colors.grey, blurRadius: 2.5),
-          ]),
+
       child: Row(
         children: <Widget>[
           Spacer(),
