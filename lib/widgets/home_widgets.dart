@@ -19,13 +19,13 @@ class HomeContainer extends StatelessWidget {
         children: <Widget>[
           Spacer(),
           Icon(
-            this.icon,
+            this.icon,color: Theme.of(context).accentColor,
             size: 35,
           ),
           SizedBox(
             width: 20,
           ),
-          Text(this.title),
+          Text(this.title,style: TextStyle(color: Theme.of(context).accentColor),),
           Spacer(),
         ],
       ),

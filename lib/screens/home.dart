@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Theme.of(context).backgroundColor,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(45),
                         topRight: Radius.circular(45))),
@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                       child: OpenContainer(
                         closedElevation: 2.0,
                         closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
-                        closedColor: Theme.of(context).backgroundColor,
+                        closedColor: Colors.white,
                         closedBuilder: (context, action){
                           return HomeContainer(
                             title: 'Text To Speech',
@@ -69,7 +69,7 @@ class Home extends StatelessWidget {
                         child: OpenContainer(
                           closedElevation: 2.0,
                           closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
-                          closedColor: Theme.of(context).backgroundColor,
+                          closedColor: Colors.white,
                           closedBuilder: (context, action){
                             return HomeContainer(
                               title: 'Speech To Text',
@@ -85,7 +85,7 @@ class Home extends StatelessWidget {
                       child: OpenContainer(
                         closedElevation: 2.0,
                         closedShape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(25))),
-                        closedColor: Theme.of(context).backgroundColor,
+                        closedColor: Colors.white,
                         closedBuilder: (context, action){
                           return HomeContainer(
                             title: 'TTS via Bluetooth',
