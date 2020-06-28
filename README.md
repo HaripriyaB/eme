@@ -1,6 +1,6 @@
 # eme
 
-A new Flutter project.
+Our project idea is to make a self equipped gadget which helps people who are deaf, mute and blind to communicate efficiently with each other.Using Hardware and software combined solution. 
 
 ## Getting Started
 
