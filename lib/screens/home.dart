@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:animations/animations.dart';
 
 import 'stt_page.dart';
+import 'tts_page.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -60,7 +61,7 @@ class Home extends StatelessWidget {
                           );
                         },
                         openBuilder: (context, action){
-                          return SpeechToTextPage();
+                          return TextToSpeechPage();
                         },
                       ),
                     ),

@@ -25,6 +25,7 @@ dependencies:
   speech_to_text: ^2.2.0
   flutter:
     sdk: flutter
+  flutter_tts: 1.2.3
 
 
   # The following adds the Cupertino Icons font to your application.
