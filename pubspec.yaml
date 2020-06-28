@@ -23,6 +23,7 @@ environment:
 dependencies:
   animations: ^1.1.1
   speech_to_text: ^2.2.0
+  flutter_bluetooth_serial: ^0.2.2
   flutter:
     sdk: flutter
   flutter_tts: 1.2.3

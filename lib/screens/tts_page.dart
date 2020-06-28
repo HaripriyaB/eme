@@ -126,12 +126,13 @@ class _TextToSpeechPageState extends State<TextToSpeechPage> {
                           });
                         },
                       ),
+                      SizedBox(width: 5.0),
                       FloatingActionButton(
                         child: Icon(
                           Icons.stop,
                           color: Theme.of(context).accentColor,
                         ),
-                        mini: true,
+
                         backgroundColor: Colors.white,
                         onPressed: _stop,
                       ),

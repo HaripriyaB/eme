@@ -1,3 +1,4 @@
+import 'package:eme/screens/ttsblue_page.dart';
 import 'package:eme/sizeconfig.dart';
 import 'package:eme/widgets/home_widgets.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class Home extends StatelessWidget {
                 children: <Widget>[
                   Flexible(
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 65,left: 30,right: 40),
+                      padding: const EdgeInsets.only(top: 75,left: 30,right: 40),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         textDirection: TextDirection.ltr,
@@ -94,7 +95,7 @@ class Home extends StatelessWidget {
                           );
                         },
                         openBuilder: (context, action){
-                          return SpeechToTextPage();
+                          return TTSBluetoothPage();
                         },
                       ),
                     ),
